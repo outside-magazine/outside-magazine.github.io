@@ -1,0 +1,295 @@
+:root {
+  --c-black: #000;
+  --c-white: #fff;
+  --c-outside-gray-light: #dbdada;
+  --c-outside-gray-med: #d3d6d9;
+  --c-outside-gray-dark: #898989;
+  --c-outside-gray-darker: #565656;
+  --c-bg-gray: #f4f4f4;
+  --c-blue: #069;
+  --c-blue-slate: #11385b;
+  --c-outside-blue: #2c4989;
+  --c-sponsor-blue: #069;
+  --c-light-blue: #08c;
+  --c-red: #9b1e25;
+  --c-red2: #9e0f18;
+  --c-bright-red: #ed0505;
+  --c-light-red: #ee5c61;
+  --c-brick: #460d11;
+  --c-faux-black: #3d3d3d;
+  --c-yellow: #ffd204;
+  --c-yellow-light: #ffed9d;
+  --c-green: #8fcea6;
+  --c-charcoal: #333;
+  --c-orange: #e1472c;
+}
+
+.winter101 {
+  margin: 0 auto;
+  width: 100%;
+}
+.winter101 .winter101-section {
+  background-color: #f4f4f4;
+  background-color: var(--c-bg-gray);
+  padding-bottom: 2em;
+  position: relative;
+  /* stylelint-disable-next-line */
+}
+.winter101 .winter101-section > header {
+  background-size: cover;
+  margin-bottom: 3em;
+  position: relative;
+}
+.winter101 .winter101-section > header::after {
+  background-color: #ffd204;
+  background-color: var(--c-yellow);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.winter101 .winter101-section > header .progressive-image {
+  background-attachment: fixed;
+  background-color: #ffd204;
+  background-color: var(--c-yellow);
+  background-position: center center;
+  height: 50vh;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 59.375em) {
+  .winter101 .winter101-section > header .progressive-image {
+    height: 300px;
+  }
+}
+.winter101 .winter101-section caption {
+  background-color: #ffed9d;
+  background-color: var(--c-yellow-light);
+  bottom: -1em;
+  box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 0 3em;
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+}
+.winter101 .winter101-section caption .separator {
+  --separator-shape: diagonal-right;
+  --separator-size: 20px;
+  --separator-shadow-color: transparent;
+  background-color: #ffed9d;
+  background-color: var(--c-yellow-light);
+  clear: both;
+  margin: 0 -3em;
+}
+.winter101 .winter101-section caption h2 {
+  font-size: 2em;
+}
+@media only screen and (min-width: 59.375em) {
+  .winter101 .winter101-section caption h2 {
+    float: left;
+    font-size: 3em;
+  }
+}
+.winter101 .winter101-section caption p {
+  opacity: 0.9;
+}
+@media only screen and (min-width: 59.375em) {
+  .winter101 .winter101-section caption p {
+    float: left;
+    line-height: calc(4em + 14px);
+    margin-left: 2em;
+  }
+}
+@media only screen and (min-width: 59.375em) {
+  .winter101 .winter101-section caption {
+    left: 5em;
+  }
+}
+.winter101 .winter101-section.section-gear header::after,
+.winter101 .winter101-section.section-gear caption,
+.winter101 .winter101-section.section-gear caption .separator {
+  background-color: #ed0505;
+  background-color: var(--c-bright-red);
+  color: #fff;
+  color: var(--c-white);
+}
+.winter101 .winter101-section.section-skills header::after {
+  background-color: #8fcea6;
+  background-color: var(--c-green);
+}
+.winter101 .winter101-section.section-skills caption {
+  background-color: #333;
+  background-color: var(--c-charcoal);
+  color: #8fcea6;
+  color: var(--c-green);
+}
+.winter101 .winter101-section.section-skills caption .separator {
+  background-color: #333;
+  background-color: var(--c-charcoal);
+}
+.winter101 .winter101-section.section-sports header::after,
+.winter101 .winter101-section.section-sports caption,
+.winter101 .winter101-section.section-sports caption .separator {
+  background-color: #08c;
+  background-color: var(--c-light-blue);
+  color: #fff;
+  color: var(--c-white);
+}
+.winter101 button {
+  background-color: #000;
+  background-color: var(--c-black);
+  border: 0;
+  color: #ffed9d;
+  color: var(--c-yellow-light);
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+.winter101 button span {
+  font-size: 1.4em;
+}
+
+.winter101-posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 2em;
+  width: 100%;
+}
+@media only screen and (min-width: 43.75em) {
+  .winter101-posts {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+@media only screen and (min-width: 59.375em) {
+  .winter101-posts {
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  }
+}
+
+article header {
+  /* stylelint-disable-next-line */
+  padding: 0.5em 1em;
+}
+article img {
+  filter: grayscale(80%);
+}
+article:hover img {
+  filter: grayscale(0);
+}
+
+.loader-bounce {
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+  width: 40px;
+}
+
+.double-bounce1,
+.double-bounce2 {
+  -webkit-animation: bounce 2s infinite ease-in-out;
+          animation: bounce 2s infinite ease-in-out;
+  background-color: #ffd204;
+  background-color: var(--c-yellow);
+  border-radius: 50%;
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.progressive-image {
+  overflow: hidden;
+  padding-bottom: 56.2%;
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.progressive-image::after {
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #fafafa 8%, #f4f4f4 38%, #fafafa 54%);
+  background-size: 1000px 640px;
+  content: "";
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.4s;
+  width: 100%;
+}
+.progressive-image.is-loaded::after {
+  opacity: 0;
+}
+.progressive-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+/*# sourceMappingURL=winter101.css.map*/
